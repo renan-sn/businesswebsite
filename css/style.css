@@ -35,7 +35,6 @@ header.cabecalho nav.menu ul {
     grid-template-columns: repeat(5, 1fr);
     padding: 0;
     grid-gap: 22px; 
-    
 }
 
 header.cabecalho nav.menu ul a {
@@ -203,12 +202,6 @@ div.container div p {
     header.cabecalho nav.menu {
         width: 100%;
     }
-
-    header.cabecalho nav.menu ul.novo-menu {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
     header.cabecalho nav.menu img.menu-mobile {
         display: block;
         margin: auto;
@@ -220,8 +213,20 @@ div.container div p {
         transform: rotateZ(90deg);
         transition: all .2s;
     }
+    header.cabecalho nav.menu ul.novo-menu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    header.cabecalho nav.menu ul.novo-menu a, 
+    header.cabecalho nav.menu ul.novo-menu a:hover {
+        border: none;
+    }
     header.cabecalho nav.menu ul.novo-menu li {
-        padding: 5px 0 5px; 
+        padding: 7px 0 7px;
+        
     }
 
 /* *********************************************** */
