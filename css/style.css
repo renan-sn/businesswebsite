@@ -159,7 +159,7 @@ div.container div p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-        padding-left: 0;
+        padding: 0 10px 0 10px;
     }
 
     /* DIV POSTS */
@@ -200,18 +200,31 @@ div.container div p {
 
 /* **** ENTRADA DO NOVO MENU **** */
     /* MENU */
-    header.cabecalho nav.menu ul {
-        display: none;
+    header.cabecalho nav.menu {
+        width: 100%;
     }
 
+    header.cabecalho nav.menu ul.novo-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     header.cabecalho nav.menu img.menu-mobile {
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        transition: all .2s; 
     }
     header.cabecalho nav.menu img.menu-mobile:hover {
         cursor: pointer;
+        transform: rotateZ(90deg);
+        transition: all .2s;
     }
+    header.cabecalho nav.menu ul.novo-menu li {
+        padding: 5px 0 5px; 
+    }
+
+/* *********************************************** */
 
     /* IMAGEM POSTS */
     div.container img {
